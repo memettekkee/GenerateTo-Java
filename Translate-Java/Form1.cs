@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -422,6 +422,30 @@ namespace Translate_Java
         {
             richTextBox1.Clear();
             richTextBox2.Clear();
+        }
+
+        private void btnhelp_Click(object sender, EventArgs e)
+        {
+            ShowHelp();
+        }
+
+        private void ShowHelp()
+        {
+            string helpMessage = OpenHelp();
+            MessageBox.Show(helpMessage, "User Guide", MessageBoxButtons.OK, MessageBoxIcon.Information );
+        }
+
+        private string OpenHelp()
+        {
+            StringBuilder helpMessage = new StringBuilder();
+
+            helpMessage.AppendLine("User Guide for Generating JSON Model into Java Programming Language");
+            helpMessage.AppendLine();
+            helpMessage.AppendLine("1. Open the desired JSON File by clicking Browse button");
+            helpMessage.AppendLine("2. After the code appeared in the box, click the Generate button to translate it to Java");
+            helpMessage.AppendLine("3. The Java Code will exist in the right box and click Export button to save it as Java file");
+
+            return helpMessage.ToString();
         }
     }
 }
