@@ -1,4 +1,4 @@
-﻿namespace Translate_Java
+namespace Translate_Java
 {
     partial class Form1
     {
@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnclear = new System.Windows.Forms.Button();
+            this.btnhelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnbrowse
@@ -54,7 +55,7 @@
             // 
             this.btnexport.AutoSize = true;
             this.btnexport.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexport.Location = new System.Drawing.Point(655, 655);
+            this.btnexport.Location = new System.Drawing.Point(1301, 655);
             this.btnexport.Name = "btnexport";
             this.btnexport.Size = new System.Drawing.Size(75, 30);
             this.btnexport.TabIndex = 1;
@@ -121,7 +122,7 @@
             // 
             this.btnclear.AutoSize = true;
             this.btnclear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclear.Location = new System.Drawing.Point(736, 655);
+            this.btnclear.Location = new System.Drawing.Point(682, 655);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(103, 30);
             this.btnclear.TabIndex = 7;
@@ -129,11 +130,24 @@
             this.btnclear.UseVisualStyleBackColor = true;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
+            // btnhelp
+            // 
+            this.btnhelp.AutoSize = true;
+            this.btnhelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhelp.Location = new System.Drawing.Point(40, 655);
+            this.btnhelp.Name = "btnhelp";
+            this.btnhelp.Size = new System.Drawing.Size(75, 30);
+            this.btnhelp.TabIndex = 8;
+            this.btnhelp.Text = "Help";
+            this.btnhelp.UseVisualStyleBackColor = true;
+            this.btnhelp.Click += new System.EventHandler(this.btnhelp_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1423, 697);
+            this.Controls.Add(this.btnhelp);
             this.Controls.Add(this.btnclear);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -159,6 +173,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnclear;
+        private System.Windows.Forms.Button btnhelp;
     }
 }
 
